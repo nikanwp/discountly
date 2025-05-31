@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// @wordpress/components
+#nwpdiscountly-app .components-button.is-large{
+  @apply text-base h-[55px];
+}
+#nwpdiscountly-app .components-button.is-secondary{
+  @apply bg-white;
+}
+// WordPress Core
+.toplevel_page_nwpdiscountly #wpcontent {
+  @apply pl-0;
+}
+// Layouts
+.nwpdiscountly-layout__header-navigations a{
+  @apply py-5 text-slate-600 font-medium text-base focus:outline-0 focus:shadow-none hover:text-black
+}
+.nwpdiscountly-layout__header-navigations a.active{
+  @apply text-wp-primary border-b-2 border-wp-primary hover:text-wp-primary-hover hover:border-wp-primary-hover
+}
+// Discountly form
+.nwpdiscountly-form-field {
+  @apply flex flex-col sm:flex-row gap-2 border-b border-gray-200 py-6;
+}
+.nwpdiscountly-form-field__label {
+  @apply min-w-[300px] font-bold whitespace-normal flex-shrink-0;
+}
+.nwpdiscountly-form-field__content {
+  @apply flex-grow;
+}
+.nwpdiscountly-input-amount{
+  @apply flex gap-1 items-center relative
+}
+.nwpdiscountly-input-amount > span {
+  @apply absolute right-2;
+}
+.nwpdiscountly-input-amount input[type="number"]::-webkit-outer-spin-button,
+.nwpdiscountly-input-amount input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.nwpdiscountly-input-amount input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// Table
+.nwpdiscountly-table tbody tr{
+  @apply hover:bg-gray-100
+}
+.nwpdiscountly-table thead tr,.nwpdiscountly-table tbody tr{
+  @apply border-b
+}
+.nwpdiscountly-table thead tr th,.nwpdiscountly-table tbody tr td{
+  @apply p-4 text-left;
+}
+

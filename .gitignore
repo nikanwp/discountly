@@ -1,0 +1,15 @@
+# Node.js
+node_modules/
+
+# Logs
+*.log
+
+# Build outputs
+build/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store

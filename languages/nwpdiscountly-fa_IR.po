@@ -1,0 +1,458 @@
+# Copyright (C) 2025 NikanWP
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Discountly – Discount Manager for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/discountly\n"
+"POT-Creation-Date: 2025-05-31 22:04+0330\n"
+"PO-Revision-Date: 2025-05-31 22:56+0330\n"
+"Last-Translator: \n"
+"Language-Team: NikanWP\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: Poedit 3.6\n"
+"X-Domain: nwpdiscountly\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Plugin Name of the plugin
+#: discountly.php
+msgid "Discountly – Discount Manager for WooCommerce"
+msgstr "دیسکانتلی - مدیریت تخفیف ووکامرس"
+
+#. Plugin URI of the plugin
+#: discountly.php
+msgid "https://nikanwp.com/product/discountly"
+msgstr "https://nikanwp.ir/product/discountly"
+
+#. Description of the plugin
+#: discountly.php
+msgid "Smart Discounts for WooCommerce"
+msgstr "تخفیف های هوشمند برای ووکامرس"
+
+#. Author of the plugin
+#: discountly.php
+msgid "NikanWP"
+msgstr "نیکان وردپرس"
+
+#. Author URI of the plugin
+#: discountly.php
+msgid "https://nikanwp.com"
+msgstr "https://nikanwp.ir"
+
+#: inc/admin/AdminMenu.php:15 inc/admin/AdminMenu.php:16 build/index.js:12067
+#: src/layouts/Header.jsx:12 build/index.js:11621
+msgid "Discountly"
+msgstr "دیسکانتلی"
+
+#: inc/rest-api/DiscountsApi.php:107 inc/rest-api/DiscountsApi.php:198
+#: inc/rest-api/DiscountsApi.php:274 inc/rest-api/DiscountsApi.php:313
+#: inc/rest-api/DiscountsApi.php:348
+msgid "Discount not found."
+msgstr "تخفیف پیدا نشد."
+
+#: inc/rest-api/DiscountsApi.php:180
+msgid "Discount created successfully."
+msgstr "تخفیف با موفقیت ایجاد شد."
+
+#: inc/rest-api/DiscountsApi.php:220
+msgid "Failed to update discount."
+msgstr "تخفیف به‌روزرسانی نشد."
+
+#: inc/rest-api/DiscountsApi.php:256
+msgid "Discount updated successfully."
+msgstr "تخفیف با موفقیت به روز شد."
+
+#: inc/rest-api/DiscountsApi.php:283
+msgid "Failed to delete discount."
+msgstr "تخفیف حذف نشد."
+
+#: inc/rest-api/DiscountsApi.php:286
+msgid "Discount deleted successfully."
+msgstr "تخفیف با موفقیت حذف شد."
+
+#: inc/rest-api/DiscountsApi.php:301
+msgid "Invalid data."
+msgstr "داده نامعتبر."
+
+#: inc/rest-api/DiscountsApi.php:325
+msgid "Failed to update priority."
+msgstr "اولویت به‌روزرسانی نشد."
+
+#: inc/rest-api/DiscountsApi.php:329
+msgid "Discount priorities updated successfully."
+msgstr "اولویت های تخفیف با موفقیت به روز شد."
+
+#: inc/rest-api/DiscountsApi.php:360
+msgid "Failed to update status."
+msgstr "وضعیت به‌روزرسانی نشد."
+
+#: inc/rest-api/DiscountsApi.php:363
+msgid "Discount status updated successfully."
+msgstr "وضعیت تخفیف با موفقیت به روز شد."
+
+#: inc/rest-api/DiscountsApi.php:390
+msgid "Please enter a discount name."
+msgstr "لطفا نام تخفیف را وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:397
+msgid "Availability date cannot be left empty."
+msgstr "تاریخ در دسترس بودن را نمی توان خالی گذاشت."
+
+#: inc/rest-api/DiscountsApi.php:405
+msgid "The end date must be after the start date."
+msgstr "تاریخ پایان باید بعد از تاریخ شروع باشد."
+
+#: inc/rest-api/DiscountsApi.php:414
+msgid "Please enter a percentage discount amount."
+msgstr "لطفا مقدار درصد تخفیف را وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:418
+msgid "Please enter a valid percentage discount amount."
+msgstr "لطفاً یک درصد تخفیف معتبر وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:422
+msgid "Please enter a positive percentage discount amount."
+msgstr "لطفا یک درصد تخفیف مثبت وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:426
+msgid "Please enter a percentage discount amount less than 100."
+msgstr "لطفاً یک درصد تخفیف کمتر از 100 وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:432
+msgid "Please enter a fixed discount amount."
+msgstr "لطفا یک مقدار تخفیف ثابت وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:436
+msgid "Please enter a valid fixed discount amount."
+msgstr "لطفا یک مقدار تخفیف ثابت معتبر وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:440
+msgid "Please enter a positive fixed discount amount."
+msgstr "لطفا یک مقدار تخفیف ثابت مثبت وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:448
+msgid "Please enter a discount cap amount."
+msgstr "لطفا مقدار سقف تخفیف را وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:452
+msgid "Please enter a valid discount cap amount."
+msgstr "لطفاً یک مقدار سقف تخفیف معتبر وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:456
+msgid "Please enter a positive discount cap amount."
+msgstr "لطفاً مبلغ سقف تخفیف مثبت را وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:464
+msgid "Please enter a minimum purchase amount for discount."
+msgstr "لطفا حداقل مبلغ خرید را برای تخفیف وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:468
+msgid "Please enter a valid minimum purchase amount for discount."
+msgstr "لطفا حداقل مبلغ خرید معتبر را برای تخفیف وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:472
+msgid "Please enter a positive minimum purchase amount for discount."
+msgstr "لطفا حداقل مبلغ خرید مثبت را برای تخفیف وارد کنید."
+
+#: inc/rest-api/DiscountsApi.php:479
+msgid "Please select a product."
+msgstr "لطفا یک محصول را انتخاب کنید."
+
+#: inc/rest-api/DiscountsApi.php:485
+msgid "Please select a category."
+msgstr "لطفاً یک دسته را انتخاب کنید."
+
+#: inc/rest-api/DiscountsApi.php:491
+msgid "Please select a user."
+msgstr "لطفا یک کاربر انتخاب کنید."
+
+#: inc/rest-api/DiscountsApi.php:497
+msgid "Please select a role."
+msgstr "لطفا یک نقش را انتخاب کنید."
+
+#: inc/rest-api/UsersApi.php:115 inc/rest-api/UsersApi.php:149
+msgid "Discount ID is required"
+msgstr "شناسه تخفیف الزامی است"
+
+#: build/index.js:10743 src/components/DiscountForm.jsx:48 build/index.js:10374
+msgid "Discount type"
+msgstr "نوع تخفیف"
+
+#: build/index.js:10751 build/index.js:12638 src/components/DiscountForm.jsx:55
+#: src/utils/translations.js:4 build/index.js:10381 build/index.js:11972
+msgid "Global Discount"
+msgstr "تخفیف سراسری"
+
+#: build/index.js:10754 build/index.js:12639 src/components/DiscountForm.jsx:56
+#: src/utils/translations.js:5 build/index.js:10382 build/index.js:11973
+msgid "Cart Discount"
+msgstr "تخفیف سبد خرید"
+
+#: build/index.js:10763 src/components/DiscountForm.jsx:63 build/index.js:10389
+msgid "Discount name"
+msgstr "نام تخفیف"
+
+#: build/index.js:10776 src/components/DiscountForm.jsx:74 build/index.js:10400
+msgid "Status"
+msgstr "وضعیت"
+
+#: build/index.js:10781 build/index.js:12509 src/components/DiscountForm.jsx:78
+#: src/pages/discounts-list-page/components/DiscountsListTable.jsx:27
+#: build/index.js:10404 build/index.js:11875
+msgid "Active"
+msgstr "فعال"
+
+#: build/index.js:10790 src/components/DiscountForm.jsx:87 build/index.js:10413
+msgid "Minimum purchase amount for discount"
+msgstr "حداقل مبلغ خرید برای تخفیف"
+
+#: build/index.js:10830 src/components/DiscountForm.jsx:122
+#: build/index.js:10448
+msgid "Discount"
+msgstr "تخفیف"
+
+#: build/index.js:10837 src/components/DiscountForm.jsx:128
+#: build/index.js:10454
+msgid "Percentage discount"
+msgstr "تخفیف درصدی"
+
+#: build/index.js:10840 src/components/DiscountForm.jsx:129
+#: build/index.js:10455
+msgid "Fixed discount"
+msgstr "تخفیف ثابت"
+
+#: build/index.js:10843 src/components/DiscountForm.jsx:130
+#: build/index.js:10456
+msgid "Percentage discount with a discount cap"
+msgstr "تخفیف درصدی با تعیین سقف تخفیف"
+
+#: build/index.js:10900 src/components/DiscountForm.jsx:191
+#: build/index.js:10517
+msgid "discount up to"
+msgstr "تخفیف تا"
+
+#: build/index.js:10940 src/components/DiscountForm.jsx:231
+#: build/index.js:10557
+msgid "Products"
+msgstr "محصولات"
+
+#: build/index.js:10947 src/components/DiscountForm.jsx:237
+#: build/index.js:10563
+msgid "All Products"
+msgstr "همه محصولات"
+
+#: build/index.js:10950 src/components/DiscountForm.jsx:238
+#: build/index.js:10564
+msgid "Selected products"
+msgstr "محصولات منتخب"
+
+#: build/index.js:10953 src/components/DiscountForm.jsx:239
+#: build/index.js:10565
+msgid "Selected categories"
+msgstr "دسته های منتخب"
+
+#: build/index.js:10956 src/components/DiscountForm.jsx:240
+#: build/index.js:10566
+msgid "Selected tags"
+msgstr "برچسب های منتخب"
+
+#: build/index.js:11017 src/components/DiscountForm.jsx:312
+#: build/index.js:10638
+msgid "Type to search products..."
+msgstr "برای جستجوی محصولات تایپ کنید..."
+
+#: build/index.js:11041 src/components/DiscountForm.jsx:346
+#: build/index.js:10672
+msgid "Type to search categories..."
+msgstr "برای جستجوی دسته ها تایپ کنید..."
+
+#: build/index.js:11065 src/components/DiscountForm.jsx:378
+#: build/index.js:10704
+msgid "Type to search tags..."
+msgstr "برای جستجوی برچسب ها تایپ کنید..."
+
+#: build/index.js:11073 src/components/DiscountForm.jsx:387
+#: build/index.js:10713
+msgid "Applies to"
+msgstr "اعمال می شود"
+
+#: build/index.js:11080 src/components/DiscountForm.jsx:393
+#: build/index.js:10719
+msgid "All users"
+msgstr "همه کاربران"
+
+#: build/index.js:11083 src/components/DiscountForm.jsx:394
+#: build/index.js:10720
+msgid "Selected users"
+msgstr "کاربران منتخب"
+
+#: build/index.js:11086 src/components/DiscountForm.jsx:395
+#: build/index.js:10721
+msgid "Selected roles"
+msgstr "نقش های منتخب"
+
+#: build/index.js:11114 src/components/DiscountForm.jsx:430
+#: build/index.js:10756
+msgid "Type to search users..."
+msgstr "برای جستجوی کاربران تایپ کنید..."
+
+#: build/index.js:11139 src/components/DiscountForm.jsx:463
+#: build/index.js:10789
+msgid "Type to search roles..."
+msgstr "برای جستجوی نقش ها تایپ کنید..."
+
+#: build/index.js:11148 src/components/DiscountForm.jsx:472
+#: build/index.js:10798
+msgid "Disable discount if a coupon is applied"
+msgstr "در صورت استفاده از کوپن، تخفیف را غیرفعال کنید"
+
+#: build/index.js:11153 src/components/DiscountForm.jsx:476
+#: build/index.js:10802
+msgid ""
+"Enable this option if you want to disable the discount when a coupon code is "
+"applied"
+msgstr ""
+"اگر می‌خواهید در هنگام اعمال کد کوپن، تخفیف را غیرفعال کنید، این گزینه را "
+"فعال کنید"
+
+#: build/index.js:11162 src/components/DiscountForm.jsx:484
+#: build/index.js:10810
+msgid "Availability"
+msgstr "در دسترس بودن"
+
+#: build/index.js:11169 src/components/DiscountForm.jsx:490
+#: build/index.js:10816
+msgid "Always Available"
+msgstr "همیشه در دسترس است"
+
+#: build/index.js:11172 src/components/DiscountForm.jsx:491
+#: build/index.js:10817
+msgid "Specific Date"
+msgstr "تاریخ مشخص"
+
+#: build/index.js:11182 src/components/DiscountForm.jsx:498
+#: build/index.js:10824
+msgid "Start Date"
+msgstr "تاریخ شروع"
+
+#: build/index.js:11203 src/components/DiscountForm.jsx:526
+#: build/index.js:10852
+msgid "End Date"
+msgstr "تاریخ پایان"
+
+#: build/index.js:11227 src/components/DiscountForm.jsx:560
+#: build/index.js:10886
+msgid "Promotional message on product page"
+msgstr "پیام تبلیغاتی در صفحه محصول"
+
+#: build/index.js:11243 src/components/DiscountForm.jsx:578
+#: build/index.js:10904
+msgid "Update discount"
+msgstr "به روزرسانی تخفیف"
+
+#: build/index.js:11243 build/index.js:12603
+#: src/components/DiscountForm.jsx:578 src/routes/AppRoutesConfig.jsx:22
+#: build/index.js:10904 build/index.js:11947
+msgid "Create discount"
+msgstr "ایجاد تخفیف"
+
+#: build/index.js:11667 src/hooks/useDiscounts.js:27 build/index.js:11258
+msgid "Failed to fetch discounts, please try again later."
+msgstr "دریافت تخفیف‌ها ناموفق بود، لطفاً بعداً دوباره امتحان کنید."
+
+#: build/index.js:11699 src/hooks/useDiscounts.js:64 build/index.js:11295
+msgid "Failed to update discount status. Please try again later."
+msgstr "به‌روزرسانی وضعیت تخفیف ناموفق بود. لطفاً بعداً دوباره امتحان کنید."
+
+#: build/index.js:11730 src/hooks/useDiscounts.js:97 build/index.js:11328
+msgid "Failed to delete discount, please try again later."
+msgstr "تخفیف حذف نشد، لطفا بعدا دوباره امتحان کنید."
+
+#: build/index.js:11766 src/hooks/useDiscounts.js:137 build/index.js:11368
+msgid "Priority updated successfully"
+msgstr "اولویت با موفقیت به‌روزرسانی شد"
+
+#: build/index.js:11768 src/hooks/useDiscounts.js:139 build/index.js:11370
+msgid "Failed to update priority"
+msgstr "اولویت به‌روزرسانی نشد"
+
+#: build/index.js:12085 build/index.js:12436 src/layouts/Header.jsx:32
+#: src/pages/discounts-list-page/components/DiscountsListEmpty.jsx:34
+#: build/index.js:11641 build/index.js:11841
+msgid "Documentation"
+msgstr "مستندات آموزشی"
+
+#: build/index.js:12358
+#: src/pages/discounts-list-page/components/DiscountListTableRow.jsx:37
+#: build/index.js:11780
+msgid "Edit"
+msgstr "ویرایش"
+
+#: build/index.js:12371
+#: src/pages/discounts-list-page/components/DiscountListTableRow.jsx:48
+#: build/index.js:11791
+msgid "Trash"
+msgstr "حذف"
+
+#: build/index.js:12424
+#: src/pages/discounts-list-page/components/DiscountsListEmpty.jsx:16
+#: build/index.js:11823
+msgid ""
+"Discounts are a great way to increase sales. After creating their list, it "
+"will be placed here."
+msgstr ""
+"تخفیف یک راه عالی برای افزایش فروش است. پس از ایجاد، لیست آنها در اینجا قرار "
+"می گیرد."
+
+#: build/index.js:12430
+#: src/pages/discounts-list-page/components/DiscountsListEmpty.jsx:26
+#: build/index.js:11833
+msgid "Create your first discount"
+msgstr "اولین تخفیف خود را ایجاد کنید"
+
+#: build/index.js:12495
+#: src/pages/discounts-list-page/components/DiscountsListTable.jsx:18
+#: build/index.js:11866
+msgid "Rearrange the rows to set the priority for applying discounts."
+msgstr "ردیف‌ها را دوباره مرتب کنید تا اولویت اعمال تخفیف‌ها مشخص شود."
+
+#: build/index.js:12501
+#: src/pages/discounts-list-page/components/DiscountsListTable.jsx:23
+#: build/index.js:11871
+msgid "Priority"
+msgstr "اولویت"
+
+#: build/index.js:12503
+#: src/pages/discounts-list-page/components/DiscountsListTable.jsx:24
+#: build/index.js:11872
+msgid "Name"
+msgstr "نام"
+
+#: build/index.js:12505
+#: src/pages/discounts-list-page/components/DiscountsListTable.jsx:25
+#: build/index.js:11873
+msgid "Discount ID"
+msgstr "شناسه تخفیف"
+
+#: build/index.js:12507
+#: src/pages/discounts-list-page/components/DiscountsListTable.jsx:26
+#: build/index.js:11874
+msgid "Type"
+msgstr "نوع"
+
+#: build/index.js:12511
+#: src/pages/discounts-list-page/components/DiscountsListTable.jsx:28
+#: build/index.js:11876
+msgid "Actions"
+msgstr "اقدامات"
+
+#: build/index.js:12597 src/routes/AppRoutesConfig.jsx:15 build/index.js:11940
+msgid "Discounts list"
+msgstr "لیست تخفیف ها"
+
+#: build/index.js:12611 src/routes/AppRoutesConfig.jsx:32 build/index.js:11957
+msgid "Edit discount"
+msgstr "ویرایش تخفیف"
