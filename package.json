@@ -1,7 +1,7 @@
 {
 	"name": "nwpdiscountly",
 	"version": "1.0.0",
-	"description": "WooCommerce discount manager",
+	"description": "Discount Manager for WooCommerce",
 	"main": "index.js",
 	"author": "NikanWP",
 	"license": "GPL-2.0-or-later",
