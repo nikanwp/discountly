@@ -12,8 +12,8 @@ class AdminMenu{
      */
     public function add_admin_menu(){
         add_menu_page(
-            __('Discountly','nwpdiscountly'),
-            __('Discountly','nwpdiscountly'),
+            __('Discountly','discountly'),
+            __('Discountly','discountly'),
             'manage_options',
             'nwpdiscountly',
             [$this,'render_admin_menu'],

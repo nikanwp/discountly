@@ -15,7 +15,7 @@ const DiscountsListEmpty = () => {
 			<p className="text-slate-500 font-medium text-xl text-center">
 				{ __(
 					'Discounts are a great way to increase sales. After creating their list, it will be placed here.',
-					'nwpdiscountly'
+					'discountly'
 				) }
 			</p>
 			<div className="flex space-x-2">
@@ -23,7 +23,7 @@ const DiscountsListEmpty = () => {
 					to="?page=nwpdiscountly&path=create"
 					className="components-button is-large is-primary"
 				>
-					{ __( 'Create your first discount', 'nwpdiscountly' ) }
+					{ __( 'Create your first discount', 'discountly' ) }
 				</Link>
 				<Button
 					target="_blank"
@@ -31,7 +31,7 @@ const DiscountsListEmpty = () => {
 					variant="secondary"
 					size="large"
 				>
-					{ __( 'Documentation', 'nwpdiscountly' ) }
+					{ __( 'Documentation', 'discountly' ) }
 				</Button>
 			</div>
 		</div>

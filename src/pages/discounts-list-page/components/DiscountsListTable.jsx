@@ -15,17 +15,17 @@ const DiscountsListTable = ( { discounts,handleOnDragEnd,updateDiscountStatus,de
 						<th className="w-[20px]">
 							<Tooltip
 								placement="bottom-start"
-								text={__('Rearrange the rows to set the priority for applying discounts.', 'nwpdiscountly')}
+								text={__('Rearrange the rows to set the priority for applying discounts.', 'discountly')}
 							>
 								<Icon icon={help}></Icon>
 							</Tooltip>
 						</th>
-						<th>{ __( 'Priority', 'nwpdiscountly' ) }</th>
-						<th>{ __( 'Name', 'nwpdiscountly' ) }</th>
-						<th>{ __( 'Discount ID', 'nwpdiscountly' ) }</th>
-						<th>{ __( 'Type', 'nwpdiscountly' ) }</th>
-						<th>{ __( 'Active', 'nwpdiscountly' ) }</th>
-						<th>{ __( 'Actions', 'nwpdiscountly' ) }</th>
+						<th>{ __( 'Priority', 'discountly' ) }</th>
+						<th>{ __( 'Name', 'discountly' ) }</th>
+						<th>{ __( 'Discount ID', 'discountly' ) }</th>
+						<th>{ __( 'Type', 'discountly' ) }</th>
+						<th>{ __( 'Active', 'discountly' ) }</th>
+						<th>{ __( 'Actions', 'discountly' ) }</th>
 					</tr>
 					</thead>
 					<SortableContext

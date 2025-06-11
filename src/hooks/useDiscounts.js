@@ -26,7 +26,7 @@ const useDiscounts = () => {
 			toast.error(
 				__(
 					'Failed to fetch discounts, please try again later.',
-					'nwpdiscountly'
+					'discountly'
 				) );
         } finally {
 			setIsLoading( false );
@@ -63,7 +63,7 @@ const useDiscounts = () => {
 			toast.error(
 				__(
 					'Failed to update discount status. Please try again later.',
-					'nwpdiscountly'
+					'discountly'
 				)
 			);
 		} finally {
@@ -96,7 +96,7 @@ const useDiscounts = () => {
 			toast.error(
 				__(
 					'Failed to delete discount, please try again later.',
-					'nwpdiscountly'
+					'discountly'
 				)
 			);
 		} finally {
@@ -134,9 +134,9 @@ const useDiscounts = () => {
 					data: { discounts: formattedDiscounts },
 				});
 
-				toast.success(__('Priority updated successfully', 'nwpdiscountly'));
+				toast.success(__('Priority updated successfully', 'discountly'));
 			} catch (error) {
-				toast.error(__('Failed to update priority', 'nwpdiscountly'));
+				toast.error(__('Failed to update priority', 'discountly'));
 			}
 		}
 	};

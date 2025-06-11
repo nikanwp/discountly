@@ -9,7 +9,7 @@ const Header = () => {
 		<div className="nwpdiscountly-layout__header bg-white px-8 flex items-center justify-between h-16">
 			<div className="flex items-center gap-x-10">
 				<h1 className="text-lg font-bold">
-					{ __( 'Discountly', 'nwpdiscountly' ) }
+					{ __( 'Discountly', 'discountly' ) }
 				</h1>
 				<div className="nwpdiscountly-layout__header-navigations flex gap-x-6 items-center">
 					{ routes.map( ( { to, title, condition }, index ) => (
@@ -29,7 +29,7 @@ const Header = () => {
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				{ __( 'Documentation', 'nwpdiscountly' ) }
+				{ __( 'Documentation', 'discountly' ) }
 			</a>
 		</div>
 	);

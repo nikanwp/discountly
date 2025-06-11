@@ -5,16 +5,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Discountly – Discount Manager for WooCommerce 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/discountly\n"
-"POT-Creation-Date: 2025-05-31 22:04+0330\n"
+"POT-Creation-Date: 2025-06-11 15:16+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: NikanWP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
-"X-Domain: nwpdiscountly\n"
+"X-Generator: Poedit 3.6\n"
+"X-Domain: discountly\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e;_n;_x;_ex\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
 
 #. Plugin Name of the plugin
 #: discountly.php
@@ -41,8 +44,8 @@ msgstr ""
 msgid "https://nikanwp.com"
 msgstr ""
 
-#: inc/admin/AdminMenu.php:15 inc/admin/AdminMenu.php:16 build/index.js:12067
-#: src/layouts/Header.jsx:12 build/index.js:11621
+#: inc/admin/AdminMenu.php:15 inc/admin/AdminMenu.php:16
+#: src/layouts/Header.jsx:12
 msgid "Discountly"
 msgstr ""
 
@@ -176,274 +179,220 @@ msgstr ""
 msgid "Discount ID is required"
 msgstr ""
 
-#: build/index.js:10743 src/components/DiscountForm.jsx:48 build/index.js:10374
+#: src/components/DiscountForm.jsx:48
 msgid "Discount type"
 msgstr ""
 
-#: build/index.js:10751 build/index.js:12638 src/components/DiscountForm.jsx:55
-#: src/utils/translations.js:4 build/index.js:10381 build/index.js:11972
+#: src/components/DiscountForm.jsx:55 src/utils/translations.js:4
 msgid "Global Discount"
 msgstr ""
 
-#: build/index.js:10754 build/index.js:12639 src/components/DiscountForm.jsx:56
-#: src/utils/translations.js:5 build/index.js:10382 build/index.js:11973
+#: src/components/DiscountForm.jsx:56 src/utils/translations.js:5
 msgid "Cart Discount"
 msgstr ""
 
-#: build/index.js:10763 src/components/DiscountForm.jsx:63 build/index.js:10389
+#: src/components/DiscountForm.jsx:63
 msgid "Discount name"
 msgstr ""
 
-#: build/index.js:10776 src/components/DiscountForm.jsx:74 build/index.js:10400
+#: src/components/DiscountForm.jsx:74
 msgid "Status"
 msgstr ""
 
-#: build/index.js:10781 build/index.js:12509 src/components/DiscountForm.jsx:78
+#: src/components/DiscountForm.jsx:78
 #: src/pages/discounts-list-page/components/DiscountsListTable.jsx:27
-#: build/index.js:10404 build/index.js:11875
 msgid "Active"
 msgstr ""
 
-#: build/index.js:10790 src/components/DiscountForm.jsx:87 build/index.js:10413
+#: src/components/DiscountForm.jsx:87
 msgid "Minimum purchase amount for discount"
 msgstr ""
 
-#: build/index.js:10830 src/components/DiscountForm.jsx:122
-#: build/index.js:10448
+#: src/components/DiscountForm.jsx:122
 msgid "Discount"
 msgstr ""
 
-#: build/index.js:10837 src/components/DiscountForm.jsx:128
-#: build/index.js:10454
+#: src/components/DiscountForm.jsx:128
 msgid "Percentage discount"
 msgstr ""
 
-#: build/index.js:10840 src/components/DiscountForm.jsx:129
-#: build/index.js:10455
+#: src/components/DiscountForm.jsx:129
 msgid "Fixed discount"
 msgstr ""
 
-#: build/index.js:10843 src/components/DiscountForm.jsx:130
-#: build/index.js:10456
+#: src/components/DiscountForm.jsx:130
 msgid "Percentage discount with a discount cap"
 msgstr ""
 
-#: build/index.js:10900 src/components/DiscountForm.jsx:191
-#: build/index.js:10517
+#: src/components/DiscountForm.jsx:191
 msgid "discount up to"
 msgstr ""
 
-#: build/index.js:10940 src/components/DiscountForm.jsx:231
-#: build/index.js:10557
+#: src/components/DiscountForm.jsx:231
 msgid "Products"
 msgstr ""
 
-#: build/index.js:10947 src/components/DiscountForm.jsx:237
-#: build/index.js:10563
+#: src/components/DiscountForm.jsx:237
 msgid "All Products"
 msgstr ""
 
-#: build/index.js:10950 src/components/DiscountForm.jsx:238
-#: build/index.js:10564
+#: src/components/DiscountForm.jsx:238
 msgid "Selected products"
 msgstr ""
 
-#: build/index.js:10953 src/components/DiscountForm.jsx:239
-#: build/index.js:10565
+#: src/components/DiscountForm.jsx:239
 msgid "Selected categories"
 msgstr ""
 
-#: build/index.js:10956 src/components/DiscountForm.jsx:240
-#: build/index.js:10566
+#: src/components/DiscountForm.jsx:240
 msgid "Selected tags"
 msgstr ""
 
-#: build/index.js:11017 src/components/DiscountForm.jsx:312
-#: build/index.js:10638
+#: src/components/DiscountForm.jsx:312
 msgid "Type to search products..."
 msgstr ""
 
-#: build/index.js:11041 src/components/DiscountForm.jsx:346
-#: build/index.js:10672
+#: src/components/DiscountForm.jsx:346
 msgid "Type to search categories..."
 msgstr ""
 
-#: build/index.js:11065 src/components/DiscountForm.jsx:378
-#: build/index.js:10704
+#: src/components/DiscountForm.jsx:378
 msgid "Type to search tags..."
 msgstr ""
 
-#: build/index.js:11073 src/components/DiscountForm.jsx:387
-#: build/index.js:10713
+#: src/components/DiscountForm.jsx:387
 msgid "Applies to"
 msgstr ""
 
-#: build/index.js:11080 src/components/DiscountForm.jsx:393
-#: build/index.js:10719
+#: src/components/DiscountForm.jsx:393
 msgid "All users"
 msgstr ""
 
-#: build/index.js:11083 src/components/DiscountForm.jsx:394
-#: build/index.js:10720
+#: src/components/DiscountForm.jsx:394
 msgid "Selected users"
 msgstr ""
 
-#: build/index.js:11086 src/components/DiscountForm.jsx:395
-#: build/index.js:10721
+#: src/components/DiscountForm.jsx:395
 msgid "Selected roles"
 msgstr ""
 
-#: build/index.js:11114 src/components/DiscountForm.jsx:430
-#: build/index.js:10756
+#: src/components/DiscountForm.jsx:430
 msgid "Type to search users..."
 msgstr ""
 
-#: build/index.js:11139 src/components/DiscountForm.jsx:463
-#: build/index.js:10789
+#: src/components/DiscountForm.jsx:463
 msgid "Type to search roles..."
 msgstr ""
 
-#: build/index.js:11148 src/components/DiscountForm.jsx:472
-#: build/index.js:10798
+#: src/components/DiscountForm.jsx:472
 msgid "Disable discount if a coupon is applied"
 msgstr ""
 
-#: build/index.js:11153 src/components/DiscountForm.jsx:476
-#: build/index.js:10802
+#: src/components/DiscountForm.jsx:476
 msgid "Enable this option if you want to disable the discount when a coupon code is applied"
 msgstr ""
 
-#: build/index.js:11162 src/components/DiscountForm.jsx:484
-#: build/index.js:10810
+#: src/components/DiscountForm.jsx:484
 msgid "Availability"
 msgstr ""
 
-#: build/index.js:11169 src/components/DiscountForm.jsx:490
-#: build/index.js:10816
+#: src/components/DiscountForm.jsx:490
 msgid "Always Available"
 msgstr ""
 
-#: build/index.js:11172 src/components/DiscountForm.jsx:491
-#: build/index.js:10817
+#: src/components/DiscountForm.jsx:491
 msgid "Specific Date"
 msgstr ""
 
-#: build/index.js:11182 src/components/DiscountForm.jsx:498
-#: build/index.js:10824
+#: src/components/DiscountForm.jsx:498
 msgid "Start Date"
 msgstr ""
 
-#: build/index.js:11203 src/components/DiscountForm.jsx:526
-#: build/index.js:10852
+#: src/components/DiscountForm.jsx:526
 msgid "End Date"
 msgstr ""
 
-#: build/index.js:11227 src/components/DiscountForm.jsx:560
-#: build/index.js:10886
+#: src/components/DiscountForm.jsx:560
 msgid "Promotional message on product page"
 msgstr ""
 
-#: build/index.js:11243 src/components/DiscountForm.jsx:578
-#: build/index.js:10904
+#: src/components/DiscountForm.jsx:578
 msgid "Update discount"
 msgstr ""
 
-#: build/index.js:11243 build/index.js:12603
 #: src/components/DiscountForm.jsx:578 src/routes/AppRoutesConfig.jsx:22
-#: build/index.js:10904 build/index.js:11947
 msgid "Create discount"
 msgstr ""
 
-#: build/index.js:11667 src/hooks/useDiscounts.js:27 build/index.js:11258
+#: src/hooks/useDiscounts.js:27
 msgid "Failed to fetch discounts, please try again later."
 msgstr ""
 
-#: build/index.js:11699 src/hooks/useDiscounts.js:64 build/index.js:11295
+#: src/hooks/useDiscounts.js:64
 msgid "Failed to update discount status. Please try again later."
 msgstr ""
 
-#: build/index.js:11730 src/hooks/useDiscounts.js:97 build/index.js:11328
+#: src/hooks/useDiscounts.js:97
 msgid "Failed to delete discount, please try again later."
 msgstr ""
 
-#: build/index.js:11766 src/hooks/useDiscounts.js:137 build/index.js:11368
+#: src/hooks/useDiscounts.js:137
 msgid "Priority updated successfully"
 msgstr ""
 
-#: build/index.js:11768 src/hooks/useDiscounts.js:139 build/index.js:11370
+#: src/hooks/useDiscounts.js:139
 msgid "Failed to update priority"
 msgstr ""
 
-#: build/index.js:12085 build/index.js:12436 src/layouts/Header.jsx:32
+#: src/layouts/Header.jsx:32
 #: src/pages/discounts-list-page/components/DiscountsListEmpty.jsx:34
-#: build/index.js:11641 build/index.js:11841
 msgid "Documentation"
 msgstr ""
 
-#: build/index.js:12358
 #: src/pages/discounts-list-page/components/DiscountListTableRow.jsx:37
-#: build/index.js:11780
 msgid "Edit"
 msgstr ""
 
-#: build/index.js:12371
 #: src/pages/discounts-list-page/components/DiscountListTableRow.jsx:48
-#: build/index.js:11791
 msgid "Trash"
 msgstr ""
 
-#: build/index.js:12424
 #: src/pages/discounts-list-page/components/DiscountsListEmpty.jsx:16
-#: build/index.js:11823
 msgid "Discounts are a great way to increase sales. After creating their list, it will be placed here."
 msgstr ""
 
-#: build/index.js:12430
 #: src/pages/discounts-list-page/components/DiscountsListEmpty.jsx:26
-#: build/index.js:11833
 msgid "Create your first discount"
 msgstr ""
 
-#: build/index.js:12495
 #: src/pages/discounts-list-page/components/DiscountsListTable.jsx:18
-#: build/index.js:11866
 msgid "Rearrange the rows to set the priority for applying discounts."
 msgstr ""
 
-#: build/index.js:12501
 #: src/pages/discounts-list-page/components/DiscountsListTable.jsx:23
-#: build/index.js:11871
 msgid "Priority"
 msgstr ""
 
-#: build/index.js:12503
 #: src/pages/discounts-list-page/components/DiscountsListTable.jsx:24
-#: build/index.js:11872
 msgid "Name"
 msgstr ""
 
-#: build/index.js:12505
 #: src/pages/discounts-list-page/components/DiscountsListTable.jsx:25
-#: build/index.js:11873
 msgid "Discount ID"
 msgstr ""
 
-#: build/index.js:12507
 #: src/pages/discounts-list-page/components/DiscountsListTable.jsx:26
-#: build/index.js:11874
 msgid "Type"
 msgstr ""
 
-#: build/index.js:12511
 #: src/pages/discounts-list-page/components/DiscountsListTable.jsx:28
-#: build/index.js:11876
 msgid "Actions"
 msgstr ""
 
-#: build/index.js:12597 src/routes/AppRoutesConfig.jsx:15 build/index.js:11940
+#: src/routes/AppRoutesConfig.jsx:15
 msgid "Discounts list"
 msgstr ""
 
-#: build/index.js:12611 src/routes/AppRoutesConfig.jsx:32 build/index.js:11957
+#: src/routes/AppRoutesConfig.jsx:32
 msgid "Edit discount"
 msgstr ""

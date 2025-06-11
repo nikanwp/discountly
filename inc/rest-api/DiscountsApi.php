@@ -104,7 +104,7 @@ class DiscountsApi{
         $discount = $wpdb->get_row($wpdb->prepare("SELECT * FROM {$wpdb->prefix}nwpdiscountly WHERE id = %d", $discount_id), ARRAY_A);
 
         if (!$discount) {
-            return new WP_Error('not_found', __('Discount not found.', 'nwpdiscountly'), ['status' => 404]);
+            return new WP_Error('not_found', __('Discount not found.', 'discountly'), ['status' => 404]);
         }
 
         $meta_data = $wpdb->get_results($wpdb->prepare("SELECT meta_key, meta_value FROM {$wpdb->prefix}nwpdiscountly_meta WHERE discount_id = %d", $discount_id), ARRAY_A);
@@ -177,7 +177,7 @@ class DiscountsApi{
             );
         }
 
-        return rest_ensure_response(['message' => __('Discount created successfully.','nwpdiscountly')]);
+        return rest_ensure_response(['message' => __('Discount created successfully.','discountly')]);
     }
 
     /**
@@ -195,7 +195,7 @@ class DiscountsApi{
         $exists = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->prefix}nwpdiscountly WHERE id = %d", $discount_id));
 
         if (!$exists) {
-            return new WP_Error('not_found', __('Discount not found.', 'nwpdiscountly'), ['status' => 404]);
+            return new WP_Error('not_found', __('Discount not found.', 'discountly'), ['status' => 404]);
         }
 
         // Validations
@@ -217,7 +217,7 @@ class DiscountsApi{
         );
 
         if ($updated === false) {
-            return new WP_Error('db_error', __('Failed to update discount.', 'nwpdiscountly'), ['status' => 500]);
+            return new WP_Error('db_error', __('Failed to update discount.', 'discountly'), ['status' => 500]);
         }
 
         $meta_table = $wpdb->prefix . 'nwpdiscountly_meta';
@@ -253,7 +253,7 @@ class DiscountsApi{
             }
         }
 
-        return rest_ensure_response(['message' => __('Discount updated successfully.', 'nwpdiscountly')]);
+        return rest_ensure_response(['message' => __('Discount updated successfully.', 'discountly')]);
     }
 
     /**
@@ -271,7 +271,7 @@ class DiscountsApi{
         $exists = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->prefix}nwpdiscountly WHERE id = %d", $discount_id));
 
         if (!$exists) {
-            return new WP_Error('not_found', __('Discount not found.', 'nwpdiscountly'), ['status' => 404]);
+            return new WP_Error('not_found', __('Discount not found.', 'discountly'), ['status' => 404]);
         }
 
         $meta_table = $wpdb->prefix . 'nwpdiscountly_meta';
@@ -280,10 +280,10 @@ class DiscountsApi{
         $deleted = $wpdb->delete($table, ['id' => $discount_id], ['%d']);
 
         if ($deleted === false) {
-            return new WP_Error('db_error', __('Failed to delete discount.', 'nwpdiscountly'), ['status' => 500]);
+            return new WP_Error('db_error', __('Failed to delete discount.', 'discountly'), ['status' => 500]);
         }
 
-        return rest_ensure_response(['message' => __('Discount deleted successfully.', 'nwpdiscountly')]);
+        return rest_ensure_response(['message' => __('Discount deleted successfully.', 'discountly')]);
     }
 
     /**
@@ -298,7 +298,7 @@ class DiscountsApi{
         $discounts = $data['discounts'];
 
         if (empty($discounts) || !is_array($discounts)) {
-            return new WP_Error('invalid_data', __('Invalid data.', 'nwpdiscountly'), ['status' => 400]);
+            return new WP_Error('invalid_data', __('Invalid data.', 'discountly'), ['status' => 400]);
         }
 
         $table = $wpdb->prefix . 'nwpdiscountly';
@@ -310,7 +310,7 @@ class DiscountsApi{
             $exists = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->prefix}nwpdiscountly WHERE id = %d", $discount_id));
 
             if (!$exists) {
-                return new WP_Error('not_found', __('Discount not found.', 'nwpdiscountly'), ['status' => 404]);
+                return new WP_Error('not_found', __('Discount not found.', 'discountly'), ['status' => 404]);
             }
 
             $updated = $wpdb->update(
@@ -322,11 +322,11 @@ class DiscountsApi{
             );
 
             if ($updated === false) {
-                return new WP_Error('db_error', __('Failed to update priority.', 'nwpdiscountly'), ['status' => 500]);
+                return new WP_Error('db_error', __('Failed to update priority.', 'discountly'), ['status' => 500]);
             }
         }
 
-        return rest_ensure_response(['message' => __('Discount priorities updated successfully.', 'nwpdiscountly')]);
+        return rest_ensure_response(['message' => __('Discount priorities updated successfully.', 'discountly')]);
     }
 
     /**
@@ -345,7 +345,7 @@ class DiscountsApi{
         $exists = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->prefix}nwpdiscountly WHERE id = %d", $discount_id));
 
         if (!$exists) {
-            return new WP_Error('not_found', __('Discount not found.', 'nwpdiscountly'), ['status' => 404]);
+            return new WP_Error('not_found', __('Discount not found.', 'discountly'), ['status' => 404]);
         }
 
         $updated = $wpdb->update(
@@ -357,10 +357,10 @@ class DiscountsApi{
         );
 
         if ($updated === false) {
-            return new WP_Error('db_error', __('Failed to update status.', 'nwpdiscountly'), ['status' => 500]);
+            return new WP_Error('db_error', __('Failed to update status.', 'discountly'), ['status' => 500]);
         }
 
-        return rest_ensure_response(['message' => __('Discount status updated successfully.', 'nwpdiscountly')]);
+        return rest_ensure_response(['message' => __('Discount status updated successfully.', 'discountly')]);
     }
 
     /**
@@ -387,14 +387,14 @@ class DiscountsApi{
         $selected_roles = $data['discountMeta']['selected_roles'];
 
         if ( empty($discount_name) ){
-            return new WP_Error('missing_discount_name', __('Please enter a discount name.','nwpdiscountly'), ['status' => 400]);
+            return new WP_Error('missing_discount_name', __('Please enter a discount name.','discountly'), ['status' => 400]);
         }
 
         if( $availability === 'specific_date' ){
             if ( empty($start_date) || empty($end_date) ) {
                 return new WP_Error(
                     'missing_discount_availability',
-                    __('Availability date cannot be left empty.', 'nwpdiscountly'),
+                    __('Availability date cannot be left empty.', 'discountly'),
                     ['status' => 400]
                 );
             }
@@ -402,7 +402,7 @@ class DiscountsApi{
             if ( strtotime($end_date) < strtotime($start_date) ) {
                 return new WP_Error(
                     'invalid_date_range',
-                    __('The end date must be after the start date.', 'nwpdiscountly'),
+                    __('The end date must be after the start date.', 'discountly'),
                     ['status' => 400]
                 );
             }
@@ -411,33 +411,33 @@ class DiscountsApi{
 
         if ( $amount_type === 'percentage_discount' || $amount_type === 'percentage_discount_cap' ) {
             if ( empty($percentage_discount) ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a percentage discount amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a percentage discount amount.', 'discountly'), ['status' => 400]);
             }
 
             if ( !is_numeric($percentage_discount) ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a valid percentage discount amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a valid percentage discount amount.', 'discountly'), ['status' => 400]);
             }
 
             if ( $percentage_discount <= 0 ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a positive percentage discount amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a positive percentage discount amount.', 'discountly'), ['status' => 400]);
             }
 
             if( $percentage_discount > 100 ){
-                return new WP_Error('missing_discount_amount', __('Please enter a percentage discount amount less than 100.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a percentage discount amount less than 100.', 'discountly'), ['status' => 400]);
             }
         }
         if ( $amount_type === 'fixed_discount' ) {
 
             if ( empty($fixed_discount) ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a fixed discount amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a fixed discount amount.', 'discountly'), ['status' => 400]);
             }
 
             if ( !is_numeric($fixed_discount) ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a valid fixed discount amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a valid fixed discount amount.', 'discountly'), ['status' => 400]);
             }
 
             if ( $fixed_discount <= 0 ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a positive fixed discount amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a positive fixed discount amount.', 'discountly'), ['status' => 400]);
             }
 
         }
@@ -445,15 +445,15 @@ class DiscountsApi{
         if ( $amount_type === 'percentage_discount_cap' ) {
 
             if ( empty($percentage_discount_cap) ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a discount cap amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a discount cap amount.', 'discountly'), ['status' => 400]);
             }
 
             if ( !is_numeric($percentage_discount_cap) ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a valid discount cap amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a valid discount cap amount.', 'discountly'), ['status' => 400]);
             }
 
             if ( $percentage_discount_cap <= 0 ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a positive discount cap amount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a positive discount cap amount.', 'discountly'), ['status' => 400]);
             }
 
         }
@@ -461,40 +461,40 @@ class DiscountsApi{
         if ( $discount_type === 'cart_discount' ) {
 
             if ( empty($min_purchase_amount) ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a minimum purchase amount for discount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a minimum purchase amount for discount.', 'discountly'), ['status' => 400]);
             }
 
             if ( !is_numeric($min_purchase_amount) ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a valid minimum purchase amount for discount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a valid minimum purchase amount for discount.', 'discountly'), ['status' => 400]);
             }
 
             if ( $min_purchase_amount <= 0 ) {
-                return new WP_Error('missing_discount_amount', __('Please enter a positive minimum purchase amount for discount.', 'nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_amount', __('Please enter a positive minimum purchase amount for discount.', 'discountly'), ['status' => 400]);
             }
 
         }
 
         if( $products_type === 'selected_products' ){
             if( empty($selected_products) ){
-                return new WP_Error('missing_discount_name', __('Please select a product.','nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_name', __('Please select a product.','discountly'), ['status' => 400]);
             }
         }
 
         if( $products_type === 'selected_categories' ){
             if( empty($selected_categories) ){
-                return new WP_Error('missing_discount_name', __('Please select a category.','nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_name', __('Please select a category.','discountly'), ['status' => 400]);
             }
         }
 
         if( $applies_to === 'selected_users' ){
             if( empty($selected_users) ){
-                return new WP_Error('missing_discount_name', __('Please select a user.','nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_name', __('Please select a user.','discountly'), ['status' => 400]);
             }
         }
 
         if( $applies_to === 'selected_roles' ){
             if( empty($selected_roles) ){
-                return new WP_Error('missing_discount_name', __('Please select a role.','nwpdiscountly'), ['status' => 400]);
+                return new WP_Error('missing_discount_name', __('Please select a role.','discountly'), ['status' => 400]);
             }
         }
 

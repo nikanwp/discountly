@@ -34,7 +34,7 @@ const DiscountListTableRow = ({ discount, rowLoading, updateDiscountStatus, dele
             </td>
             <td>
                 <div className="flex gap-x-2">
-                    <Tooltip text={__('Edit', 'nwpdiscountly')}>
+                    <Tooltip text={__('Edit', 'discountly')}>
                         <Link className="font-semibold text-blue-600 hover:text-blue-700" to={`?page=nwpdiscountly&path=edit&id=${discount.id}`}>
                             <Button
                                 variant="secondary"
@@ -45,7 +45,7 @@ const DiscountListTableRow = ({ discount, rowLoading, updateDiscountStatus, dele
                             ></Button>
                         </Link>
                     </Tooltip>
-                    <Tooltip text={__('Trash', 'nwpdiscountly')}>
+                    <Tooltip text={__('Trash', 'discountly')}>
                         <Button
                             isDestructive
                             variant="secondary"

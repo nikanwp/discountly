@@ -45,22 +45,22 @@ const DiscountForm = (
             <form onSubmit={handleSubmit} className="nwpdiscountly-layout__form">
                 {/*discountType*/}
                 <div className="nwpdiscountly-form-field pt-0">
-                    <div className="nwpdiscountly-form-field__label">{__('Discount type','nwpdiscountly')}</div>
+                    <div className="nwpdiscountly-form-field__label">{__('Discount type','discountly')}</div>
                     <div className="nwpdiscountly-form-field__content">
                         <SelectControl
                             __nextHasNoMarginBottom
                             value={formData.discountDetails.discountType}
                             onChange={(value) => handleOnChange('discountType',value,'discountDetails')}
                             options={[
-                                {label: __('Global Discount','nwpdiscountly'), value: 'global_discount'},
-                                {label: __('Cart Discount','nwpdiscountly'), value: 'cart_discount'},
+                                {label: __('Global Discount','discountly'), value: 'global_discount'},
+                                {label: __('Cart Discount','discountly'), value: 'cart_discount'},
                             ]}
                         />
                     </div>
                 </div>
                 {/*Discount name*/}
                 <div className="nwpdiscountly-form-field">
-                    <div className="nwpdiscountly-form-field__label">{__('Discount name','nwpdiscountly')}</div>
+                    <div className="nwpdiscountly-form-field__label">{__('Discount name','discountly')}</div>
                     <div className="nwpdiscountly-form-field__content">
                         <TextControl
                             __nextHasNoMarginBottom
@@ -71,11 +71,11 @@ const DiscountForm = (
                 </div>
                 {/*Active*/}
                 <div className="nwpdiscountly-form-field">
-                    <div className="nwpdiscountly-form-field__label">{__('Status','nwpdiscountly')}</div>
+                    <div className="nwpdiscountly-form-field__label">{__('Status','discountly')}</div>
                     <div className="nwpdiscountly-form-field__content">
                         <ToggleControl
                             __nextHasNoMarginBottom
-                            label={__('Active','nwpdiscountly')}
+                            label={__('Active','discountly')}
                             checked={formData.discountDetails.active}
                             onChange={(value) => handleOnChange('active',value,'discountDetails')}
                         />
@@ -84,7 +84,7 @@ const DiscountForm = (
                 {/*Minimum purchase amount for discount*/}
                 {formData.discountDetails.discountType === 'cart_discount' && (
                     <div className="nwpdiscountly-form-field">
-                        <div className="nwpdiscountly-form-field__label">{__('Minimum purchase amount for discount','nwpdiscountly')}</div>
+                        <div className="nwpdiscountly-form-field__label">{__('Minimum purchase amount for discount','discountly')}</div>
                         <div className="nwpdiscountly-form-field__content">
                             <div className="nwpdiscountly-input-amount">
                                 <span>{nwpdiscountly.wc_currency_symbol}</span>
@@ -119,15 +119,15 @@ const DiscountForm = (
                 )}
                 {/*Amount*/}
                 <div className="nwpdiscountly-form-field">
-                    <div className="nwpdiscountly-form-field__label">{__('Discount','nwpdiscountly')}</div>
+                    <div className="nwpdiscountly-form-field__label">{__('Discount','discountly')}</div>
                     <div className="nwpdiscountly-form-field__content">
                         <RadioControl
                             __nextHasNoMarginBottom
                             onChange={(value) => handleOnChange('amount_type',value,'discountMeta')}
                             options={[
-                                {label: __('Percentage discount','nwpdiscountly'), value: 'percentage_discount'},
-                                {label: __('Fixed discount','nwpdiscountly'), value: 'fixed_discount'},
-                                {label: __('Percentage discount with a discount cap','nwpdiscountly'), value: 'percentage_discount_cap'}
+                                {label: __('Percentage discount','discountly'), value: 'percentage_discount'},
+                                {label: __('Fixed discount','discountly'), value: 'fixed_discount'},
+                                {label: __('Percentage discount with a discount cap','discountly'), value: 'percentage_discount_cap'}
                             ]}
                             selected={formData.discountMeta.amount_type}
                         />
@@ -188,7 +188,7 @@ const DiscountForm = (
                                         className="w-full"
                                     />
                                 </div>
-                                <div>{__('discount up to','nwpdiscountly')}</div>
+                                <div>{__('discount up to','discountly')}</div>
                                 <div className="nwpdiscountly-input-amount flex-1">
                                     <span>{nwpdiscountly.wc_currency_symbol}</span>
                                     <TextControl
@@ -228,16 +228,16 @@ const DiscountForm = (
                 </div>
                 {/*Products*/}
                 <div className="nwpdiscountly-form-field">
-                    <div className="nwpdiscountly-form-field__label">{__('Products','nwpdiscountly')}</div>
+                    <div className="nwpdiscountly-form-field__label">{__('Products','discountly')}</div>
                     <div className="nwpdiscountly-form-field__content">
                         <RadioControl
                             __nextHasNoMarginBottom
                             onChange={(value) => handleOnChange('products',value,'discountMeta')}
                             options={[
-                                {label: __('All Products','nwpdiscountly'), value: 'all_products'},
-                                {label: __('Selected products','nwpdiscountly'), value: 'selected_products'},
-                                {label: __('Selected categories','nwpdiscountly'), value: 'selected_categories'},
-                                {label: __('Selected tags','nwpdiscountly'), value: 'selected_tags'}
+                                {label: __('All Products','discountly'), value: 'all_products'},
+                                {label: __('Selected products','discountly'), value: 'selected_products'},
+                                {label: __('Selected categories','discountly'), value: 'selected_categories'},
+                                {label: __('Selected tags','discountly'), value: 'selected_tags'}
                             ]}
                             selected={formData.discountMeta.products}
                         />
@@ -309,7 +309,7 @@ const DiscountForm = (
                                     handleOnChange("selected_products", selectedProducts, "discountMeta");
                                 }}
                                 onInputChange={(value) => fetchProducts(value)}
-                                placeholder={__("Type to search products...", "nwpdiscountly")}
+                                placeholder={__("Type to search products...", "discountly")}
                                 className="mt-4"
                             />
 
@@ -343,7 +343,7 @@ const DiscountForm = (
                                     handleOnChange("selected_categories", categoryIds, "discountMeta");
                                 }}
                                 onInputChange={(value) => fetchCategories(value)}
-                                placeholder={__("Type to search categories...", "nwpdiscountly")}
+                                placeholder={__("Type to search categories...", "discountly")}
                                 className="mt-4"
                             />
                         )}
@@ -375,7 +375,7 @@ const DiscountForm = (
                                     handleOnChange("selected_tags", tagIds, "discountMeta");
                                 }}
                                 onInputChange={(value) => fetchTags(value)}
-                                placeholder={__("Type to search tags...", "nwpdiscountly")}
+                                placeholder={__("Type to search tags...", "discountly")}
                                 className="mt-4"
                             />
                         )}
@@ -384,15 +384,15 @@ const DiscountForm = (
 
                 {/*Applies to*/}
                 <div className="nwpdiscountly-form-field">
-                    <div className="nwpdiscountly-form-field__label">{__('Applies to','nwpdiscountly')}</div>
+                    <div className="nwpdiscountly-form-field__label">{__('Applies to','discountly')}</div>
                     <div className="nwpdiscountly-form-field__content">
                         <RadioControl
                             __nextHasNoMarginBottom
                             onChange={(value) => handleOnChange('applies_to',value,'discountMeta')}
                             options={[
-                                {label: __('All users','nwpdiscountly'), value: 'all_users'},
-                                {label: __('Selected users','nwpdiscountly'), value: 'selected_users'},
-                                {label: __('Selected roles','nwpdiscountly'), value: 'selected_roles'}
+                                {label: __('All users','discountly'), value: 'all_users'},
+                                {label: __('Selected users','discountly'), value: 'selected_users'},
+                                {label: __('Selected roles','discountly'), value: 'selected_roles'}
                             ]}
                             selected={formData.discountMeta.applies_to}
                         />
@@ -427,7 +427,7 @@ const DiscountForm = (
                                     handleOnChange("selected_users", userIds, "discountMeta");
                                 }}
                                 onInputChange={(value) => fetchUsers(value)}
-                                placeholder={__("Type to search users...", "nwpdiscountly")}
+                                placeholder={__("Type to search users...", "discountly")}
                                 className="mt-4"
                             />
                         )}
@@ -460,7 +460,7 @@ const DiscountForm = (
                                     });
                                     handleOnChange("selected_roles", roleKeys, "discountMeta");
                                 }}
-                                placeholder={__("Type to search roles...", "nwpdiscountly")}
+                                placeholder={__("Type to search roles...", "discountly")}
                                 onInputChange={(value) => fetchRoles(value)}
                                 className="mt-4"
                             />
@@ -469,11 +469,11 @@ const DiscountForm = (
                 </div>
                 {/*Disable discount if a coupon is applied*/}
                 <div className="nwpdiscountly-form-field">
-                    <div className="nwpdiscountly-form-field__label">{__('Disable discount if a coupon is applied','nwpdiscountly')}</div>
+                    <div className="nwpdiscountly-form-field__label">{__('Disable discount if a coupon is applied','discountly')}</div>
                     <div className="nwpdiscountly-form-field__content">
                         <ToggleControl
                             __nextHasNoMarginBottom
-                            label={__('Enable this option if you want to disable the discount when a coupon code is applied','nwpdiscountly')}
+                            label={__('Enable this option if you want to disable the discount when a coupon code is applied','discountly')}
                             checked={formData.discountMeta.disable_discount_with_coupon}
                             onChange={(value) => handleOnChange('disable_discount_with_coupon',value,'discountMeta')}
                         />
@@ -481,21 +481,21 @@ const DiscountForm = (
                 </div>
                 {/*Availability*/}
                 <div className="nwpdiscountly-form-field">
-                    <div className="nwpdiscountly-form-field__label">{__('Availability','nwpdiscountly')}</div>
+                    <div className="nwpdiscountly-form-field__label">{__('Availability','discountly')}</div>
                     <div className="nwpdiscountly-form-field__content">
                         <RadioControl
                             __nextHasNoMarginBottom
                             onChange={(value) => handleOnChange('availability',value,'discountMeta')}
                             options={[
-                                {label: __('Always Available','nwpdiscountly'), value: 'always_available'},
-                                {label: __('Specific Date','nwpdiscountly'), value: 'specific_date'}
+                                {label: __('Always Available','discountly'), value: 'always_available'},
+                                {label: __('Specific Date','discountly'), value: 'specific_date'}
                             ]}
                             selected={formData.discountMeta.availability}
                         />
                         {formData.discountMeta.availability === 'specific_date' && (
                             <div className="flex gap-3 mt-5">
                                 <div className="flex flex-col gap-1">
-                                    <span className="text-xs">{__('Start Date','nwpdiscountly')}</span>
+                                    <span className="text-xs">{__('Start Date','discountly')}</span>
                                     <DatePicker
                                         value={nwpdiscountly.wp_lang === "fa_IR" && formData.discountMeta.start_date
                                             ? new DateObject(formData.discountMeta.start_date).convert(persian).format('YYYY-MM-DD HH:mm:ss')
@@ -523,7 +523,7 @@ const DiscountForm = (
                                     />
                                 </div>
                                 <div className="flex flex-col gap-1">
-                                    <span className="text-xs">{__('End Date','nwpdiscountly')}</span>
+                                    <span className="text-xs">{__('End Date','discountly')}</span>
                                     <DatePicker
                                         value={nwpdiscountly.wp_lang === "fa_IR" && formData.discountMeta.end_date
                                             ? new DateObject(formData.discountMeta.end_date).convert(persian).format('YYYY-MM-DD HH:mm:ss')
@@ -557,7 +557,7 @@ const DiscountForm = (
                 {/*Promotional message on product page*/}
                 {formData.discountDetails.discountType === 'global_discount' && (
                     <div className="nwpdiscountly-form-field border-0">
-                        <div className="nwpdiscountly-form-field__label">{__('Promotional message on product page','nwpdiscountly')}</div>
+                        <div className="nwpdiscountly-form-field__label">{__('Promotional message on product page','discountly')}</div>
                         <div className="nwpdiscountly-form-field__content">
                             <RichTextEditor
                                 value={ formData.discountMeta.product_promo_message }
@@ -575,7 +575,7 @@ const DiscountForm = (
                     isBusy={isLoading}
                     className="mt-4"
                 >
-                    {isEditing ? __('Update discount','nwpdiscountly') : __('Create discount','nwpdiscountly')}
+                    {isEditing ? __('Update discount','discountly') : __('Create discount','discountly')}
                 </Button>
             </form>
         </div>

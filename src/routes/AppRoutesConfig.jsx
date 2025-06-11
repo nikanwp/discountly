@@ -12,14 +12,14 @@ const AppRoutesConfig = () => {
 	const routes = [
 		{
 			to: '?page=nwpdiscountly',
-			title: __( 'Discounts list', 'nwpdiscountly' ),
+			title: __( 'Discounts list', 'discountly' ),
 			path: '/',
 			component: DiscountsList,
 			condition: page === 'nwpdiscountly' && !path,
 		},
 		{
 			to: '?page=nwpdiscountly&path=create',
-			title: __( 'Create discount', 'nwpdiscountly' ),
+			title: __( 'Create discount', 'discountly' ),
 			path: '/',
 			component: CreateDiscount,
 			condition: page === 'nwpdiscountly' && path === 'create',
@@ -29,7 +29,7 @@ const AppRoutesConfig = () => {
 	if (id) {
 		routes.push({
 			to: `?page=nwpdiscountly&path=edit&id=${id}`,
-			title: __( 'Edit discount', 'nwpdiscountly' ),
+			title: __( 'Edit discount', 'discountly' ),
 			path: '/',
 			component: EditDiscount,
 			condition: page === 'nwpdiscountly' && path === 'edit',

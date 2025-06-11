@@ -33,7 +33,7 @@ class AdminAsset{
             )
         );
         wp_enqueue_script($js_handle_name);
-        wp_set_script_translations($js_handle_name, 'nwpdiscountly', NWPDISCOUNTLY_DIR . 'languages/');
+        wp_set_script_translations($js_handle_name, 'discountly', NWPDISCOUNTLY_DIR . 'languages/');
 
         // Add CSS file
         $css_file = is_rtl() ? NWPDISCOUNTLY_URL . 'build/index-rtl.css' : NWPDISCOUNTLY_URL . 'build/index.css';

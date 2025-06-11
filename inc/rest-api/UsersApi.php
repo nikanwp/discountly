@@ -112,7 +112,7 @@ class UsersApi {
         $discount_id = intval($request->get_param('id'));
 
         if (!$discount_id) {
-            return new \WP_Error('missing_discount_id', __('Discount ID is required', 'nwpdiscountly'), ['status' => 400]);
+            return new \WP_Error('missing_discount_id', __('Discount ID is required', 'discountly'), ['status' => 400]);
         }
 
         global $wpdb;
@@ -146,7 +146,7 @@ class UsersApi {
         $discount_id = intval($request->get_param('id'));
 
         if (!$discount_id) {
-            return new \WP_Error('missing_discount_id', __('Discount ID is required', 'nwpdiscountly'), ['status' => 400]);
+            return new \WP_Error('missing_discount_id', __('Discount ID is required', 'discountly'), ['status' => 400]);
         }
 
 

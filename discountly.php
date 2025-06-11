@@ -6,7 +6,7 @@
  * Version: 1.0.0
  * Author: NikanWP
  * Author URI: https://nikanwp.com
- * Text Domain: nwpdiscountly
+ * Text Domain: discountly
  * Domain Path: /languages
  * Requires Plugins: woocommerce
  * License: GPLv2 or later
